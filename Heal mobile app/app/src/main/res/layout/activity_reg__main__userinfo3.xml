@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:id="@+id/relative"
+    tools:context="com.virtuosoace.heal.Reg_Main_Userinfo3">
+
+    <ImageButton
+        android:id="@+id/backtoinfo2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toStartOf="@+id/fname"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        app:srcCompat="?android:attr/actionModeCloseDrawable" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/relative"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:textAlignment="center"
+        android:text="Let your Family members &amp; Friends know
+        How are you feeling Today"
+        android:textSize="18dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="147dp" />
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView6"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/nexttouserinfo4"
+        android:layout_marginBottom="52dp"
+        android:layout_toStartOf="@+id/nexttouserinfo4"
+        android:background="@android:color/transparent"
+        android:text="+ Add members" />
+
+
+    <Button
+        android:id="@+id/nexttouserinfo4"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/skiptoinfo4"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/mybutton"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/skiptoinfo4"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/mybutton"
+        android:text="Skip"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

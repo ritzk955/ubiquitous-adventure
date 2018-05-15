@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    android:weightSum="10"
+    tools:context="com.virtuosoace.heal.Medical">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageButton
+            android:id="@+id/backtoLogin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            app:srcCompat="?android:attr/actionModeCloseDrawable" />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAILY LOG"
+            android:textSize="34sp"
+            android:textColor="#FFFFFFFF"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:columnCount="1"
+        android:padding="14dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/day1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="21dp"
+                    android:text="DAY:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/day11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/day1"
+                    android:layout_toEndOf="@+id/day1"
+                    android:hint="days"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                     android:id="@+id/date1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignBaseline="@+id/day1"
+                     android:layout_alignBottom="@+id/day1"
+                     android:layout_marginStart="106dp"
+                     android:layout_toEndOf="@+id/day1"
+                     android:text="DATE:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/date11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/day11"
+                    android:layout_toEndOf="@+id/date1"
+                    android:hint="date"
+                    android:textSize="16sp"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/day2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="21dp"
+                    android:text="DAY:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/day12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/day2"
+                    android:layout_toEndOf="@+id/day2"
+                    android:hint="days"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/day2"
+                    android:layout_alignBottom="@+id/day2"
+                    android:layout_marginStart="106dp"
+                    android:layout_toEndOf="@+id/day2"
+                    android:text="DATE:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/date12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/day12"
+                    android:layout_toEndOf="@+id/date2"
+                    android:hint="date"
+                    android:textSize="16sp"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/day3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="21dp"
+                    android:text="DAY:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/day13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/day3"
+                    android:layout_toEndOf="@+id/day3"
+                    android:hint="days"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/date3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/day3"
+                    android:layout_alignBottom="@+id/day3"
+                    android:layout_marginStart="106dp"
+                    android:layout_toEndOf="@+id/day3"
+                    android:text="DATE:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/date13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/day13"
+                    android:layout_toEndOf="@+id/date3"
+                    android:hint="date"
+                    android:textSize="16sp"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/day4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="21dp"
+                    android:text="DAY:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/day14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/day4"
+                    android:layout_toEndOf="@+id/day4"
+                    android:hint="days"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/date4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/day4"
+                    android:layout_alignBottom="@+id/day4"
+                    android:layout_marginStart="106dp"
+                    android:layout_toEndOf="@+id/day4"
+                    android:text="DATE:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/date14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/day14"
+                    android:layout_toEndOf="@+id/date4"
+                    android:hint="date"
+                    android:textSize="16sp"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/day5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="21dp"
+                    android:text="DAY:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/day15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/day5"
+                    android:layout_toEndOf="@+id/day5"
+                    android:hint="days"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/date5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/day5"
+                    android:layout_alignBottom="@+id/day5"
+                    android:layout_marginStart="106dp"
+                    android:layout_toEndOf="@+id/day5"
+                    android:text="DATE:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/date15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/day15"
+                    android:layout_toEndOf="@+id/date5"
+                    android:hint="date"
+                    android:textSize="16sp"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/day6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="21dp"
+                    android:text="DAY:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/day16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/day6"
+                    android:layout_toEndOf="@+id/day6"
+                    android:hint="days"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/date6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/day6"
+                    android:layout_alignBottom="@+id/day6"
+                    android:layout_marginStart="106dp"
+                    android:layout_toEndOf="@+id/day6"
+                    android:text="DATE:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/date16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/day16"
+                    android:layout_toEndOf="@+id/date6"
+                    android:hint="date"
+                    android:textSize="16sp"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/day7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="21dp"
+                    android:text="DAY:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/day17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/day7"
+                    android:layout_toEndOf="@+id/day7"
+                    android:hint="days"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/date7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/day7"
+                    android:layout_alignBottom="@+id/day7"
+                    android:layout_marginStart="106dp"
+                    android:layout_toEndOf="@+id/day7"
+                    android:text="DATE:"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/date17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/day17"
+                    android:layout_toEndOf="@+id/date7"
+                    android:hint="date"
+                    android:textSize="16sp"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+     </GridLayout>
+
+
+</LinearLayout>

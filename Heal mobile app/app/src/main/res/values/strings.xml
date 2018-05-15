@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Heal</string>
+    <string name="heart_rate">heart rate</string>
+    <string name="body_temp">body temp</string>
+    <string name="humidity">humidity</string>
+    <string name="location">location</string>
+</resources>

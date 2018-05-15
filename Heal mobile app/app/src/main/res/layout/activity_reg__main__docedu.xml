@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.virtuosoace.heal.Reg_Main_Docedu">
+
+    <ImageButton
+        android:id="@+id/backtodocadd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toStartOf="@+id/fname"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        app:srcCompat="?android:attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/backtodocadd"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Your Qualification will help Patients to Find You"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView13"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Specialization" />
+
+    <EditText
+        android:id="@+id/studies"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_below="@+id/textView14"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="Gynecologist,Cardiologist etc"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/studies"
+        android:layout_below="@+id/studies"
+        android:layout_marginTop="27dp"
+        android:text="Qualification"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/mainstudies"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_below="@+id/textView15"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="MBBS,MD,BDS,MS etc"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="27dp"
+        android:background="@drawable/mybutton"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Finish"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/finish"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/finish"
+        android:background="@drawable/mybutton"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>

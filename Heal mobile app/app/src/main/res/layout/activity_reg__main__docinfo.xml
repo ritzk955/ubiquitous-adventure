@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.virtuosoace.heal.Reg_Main_Docinfo">
+
+    <ImageButton
+        android:id="@+id/backtomain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toStartOf="@+id/fname"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        app:srcCompat="?android:attr/actionModeCloseDrawable" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="60dp"
+        android:src="@drawable/user_pic" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textColor="#000000"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="Fullname"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fname"
+        android:layout_below="@+id/fname"
+        android:layout_marginTop="23dp"
+        android:text="Male"
+        android:textSize="18dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox"
+        android:layout_alignBottom="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:text="Female"
+        android:textSize="18dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox3"
+        android:layout_alignBottom="@+id/checkBox3"
+        android:layout_alignEnd="@+id/fname"
+        android:text="others"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:id="@+id/femail"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:textColor="#000000"
+        android:inputType="textEmailAddress"
+        android:hint="Email Id"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/fmobno"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/femail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:textColor="#000000"
+        android:inputType="phone"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fage"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/fmobno"
+        android:layout_below="@+id/fmobno"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="Age"
+        android:textColor="#000000"
+        android:inputType="number"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/nexttodocadd"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/submit"
+        android:layout_alignEnd="@+id/fmobno"
+        android:layout_gravity="center"
+        android:background="@drawable/mybutton"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignTop="@+id/fage"
+        android:background="@drawable/mybutton"
+        android:text="Submit"
+        android:visibility="visible" />
+</RelativeLayout>
